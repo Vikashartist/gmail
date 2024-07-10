@@ -19,10 +19,10 @@
      #main-container{
         width:70px;
         height:28px;
-        /* border:1px solid black; */
+       
         border-radius:16px;
         display:flex;
-        ;
+        
      }
      #main-container:hover{
         background-color:#eeeeee;
@@ -36,6 +36,7 @@
         border-bottom-left-radius:16px;
      }
      .text{
+        user-select: none;
         width:40px;
         height:28px;
         background-color:transparent;
@@ -52,14 +53,23 @@
        font-optical-sizing: auto;
        font-weight: revert-layer;
   /* font-weight: <weight>; */
-  
+       padding-right:8px;
+     }
+     img{
+       width:16px;
+       user-select:none;
+     }
+     .logo{
+       display:flex;
+       justify-content:center;
+       align-items:center;
      }
      
 
 </style>
 <body>
     <div id="main-container">
-        <div class="logo"></div>
+        <div class="logo"><img src="gmaillogo.png" alt="/pngwing.com.png"></div>
         <div class="text">Gmail</div>
     </div>
     
